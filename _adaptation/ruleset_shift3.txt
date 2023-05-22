@@ -1,0 +1,9 @@
+play Solfege/1_Ne.mp3
+play Solfege/2_Wo.mp3
+play Solfege/1_Ne.mp3
+play Solfege/2_Wo.mp3
+play Solfege/3_Re.mp3
+play Solfege/4_Ro.mp3
+play Solfege/5_Vi.mp3
+play Solfege/6_Xi.mp3
+play Solfege/7_Ve.mp3
