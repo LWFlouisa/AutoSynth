@@ -3,222 +3,169 @@ include HumanistErrors
 
 with_human_errors do
 
-#def create_rulesets
-#  row = 0 ## The value of row is 0.
-#
-#  ## The directory knwon_ruleset is _ruleset/rules.txt
-#  ruleset = File.readlines("_rulesets/rules.txt")
-#
-#  ### Values of the individual rows, as Ruby counts from zero.
-#  rule1 = 0 #row + 1
-#  rule2 = 1 #row + 2
-#  rule3 = 2 #row + 3
-#  rule4 = 3 #row + 4
-#  rule5 = 4 #row + 5
-#  rule6 = 5 #row + 6
-#  rule7 = 6 #row + 7
-#  rule8 = 7 #row + 8
-#  rule9 = 8 #row + 9
-#
-#  ### Creation of the actual rulesets.
-#  ruleset_1 = "#{ruleset[rule1].tr '
-#', ''}
-#{ruleset[rule2].tr '
-#', ''}
-#{ruleset[rule3].tr '
-#', ''}
-#{ruleset[rule4].tr '
-#', ''}
-#{ruleset[rule5].tr '
-#', ''}
-#{ruleset[rule6].tr '
-#', ''}
-#{ruleset[rule7].tr '
-#', ''}
-#{ruleset[rule8].tr '
-#', ''}
-#{ruleset[rule9]}"
-#
-#  ruleset_2 = "#{ruleset[rule9]}
-#{ruleset[rule1].tr '
-#', ''}
-#{ruleset[rule2].tr '
-#', ''}
-#{ruleset[rule3].tr '
-#', ''}
-#{ruleset[rule4].tr '
-#', ''}
-#{ruleset[rule5].tr '
-#', ''}
-#{ruleset[rule6].tr '
-#', ''}
-#{ruleset[rule7].tr '
-#', ''}
-#{ruleset[rule8].tr '
-#', ''}"
-#
-#  ruleset_3 = "#{ruleset[rule8].tr '
-#', ''}
-#{ruleset[rule9]}
-#{ruleset[rule1].tr '
-#', ''}
-#{ruleset[rule2].tr '
-#', ''}
-#{ruleset[rule3].tr '
-#', ''}
-#{ruleset[rule4].tr '
-#', ''}
-#{ruleset[rule5].tr '
-#', ''}
-#{ruleset[rule6].tr '
-#', ''}
-#{ruleset[rule7].tr '
-#', ''}"
-#
-#  ruleset_4 = "#{ruleset[rule7].tr '
-#', ''}
-#{ruleset[rule8].tr '
-#', ''}
-#{ruleset[rule9]}
-#{ruleset[rule1].tr '
-#', ''}
-#{ruleset[rule2].tr '
-#', ''}
-#{ruleset[rule3].tr '
-#', ''}
-#{ruleset[rule4].tr '
-#', ''}
-#{ruleset[rule5].tr '
-#', ''}
-#{ruleset[rule6].tr '
-#', ''}"
-#
-#  ruleset_5 = "#{ruleset[rule6].tr '
-#', ''}
-#{ruleset[rule7].tr '
-#', ''}
-#{ruleset[rule8].tr '
-#', ''}
-#{ruleset[rule9]}
-#{ruleset[rule1].tr '
-#', ''}
-#{ruleset[rule2].tr '
-#', ''}
-#{ruleset[rule3].tr '
-#', ''}
-#{ruleset[rule4].tr '
-#', ''}
-#{ruleset[rule5].tr '
-#', ''}"
-#
-#  ruleset_6 = "#{ruleset[rule5].tr '
-#', ''}
-#{ruleset[rule6].tr '
-#', ''}
-#{ruleset[rule7].tr '
-#', ''}
-#{ruleset[rule8].tr '
-#', ''}
-#{ruleset[rule9]}
-#{ruleset[rule1].tr '
-#', ''}
-#{ruleset[rule2].tr '
-#', ''}
-#{ruleset[rule3].tr '
-#', ''}
-#{ruleset[rule4].tr '
-#', ''}"
-#
-#  ruleset_7 = "#{ruleset[rule4].tr '
-#', ''}
-#{ruleset[rule5].tr '
-#', ''}
-#{ruleset[rule6].tr '
-#', ''}
-#{ruleset[rule7].tr '
-#', ''}
-#{ruleset[rule8].tr '
-#', ''}
-#{ruleset[rule9]}
-#{ruleset[rule1].tr '
-#', ''}
-#{ruleset[rule2].tr '
-#', ''}
-#{ruleset[rule3].tr '
-#', ''}"
-#
-#  ruleset_8 = "#{ruleset[rule3].tr '
-#', ''}
-#{ruleset[rule4].tr '
-#', ''}
-#{ruleset[rule5].tr '
-#', ''}
-#{ruleset[rule6].tr '
-#', ''}
-#{ruleset[rule7].tr '
-#', ''}
-#{ruleset[rule8].tr '
-#', ''}
-#{ruleset[rule9]}
-#{ruleset[rule1].tr '
-#', ''}
-#{ruleset[rule2].tr '
-#', ''}"
-#
-#  ruleset_9 = "#{ruleset[rule2].tr '
-#', ''}
-#{ruleset[rule3].tr '
-#', ''}
-#{ruleset[rule4].tr '
-#', ''}
-#{ruleset[rule5].tr '
-#', ''}
-#{ruleset[rule6].tr '
-#', ''}
-#{ruleset[rule7].tr '
-#', ''}
-#{ruleset[rule8].tr '
-#', ''}
-#{ruleset[rule9]}
-#{ruleset[rule1]}.tr '
-#', ''"
-#
-#  open("_adaptation/ruleset_shift1.txt", "w") { |f|
-#    f.puts ruleset_1
-#  }
-#
-#  open("_adaptation/ruleset_shift2.txt", "w") { |f|
-#    f.puts ruleset_2
-#  }
-#
-#  open("_adaptation/ruleset_shift3.txt", "w") { |f|
-#    f.puts ruleset_3
-#  }
-#
-#  open("_adaptation/ruleset_shift4.txt", "w") { |f|
-#    f.puts ruleset_4
-#  }
-#
-#  open("_adaptation/ruleset_shift5.txt", "w") { |f|
-#    f.puts ruleset_5
-#  }
-#
-#  open("_adaptation/ruleset_shift6.txt", "w") { |f|
-#    f.puts ruleset_6
-#  }
-#
-#  open("_adaptation/ruleset_shift7.txt", "w") { |f|
-#    f.puts ruleset_7
-#  }
-#
-#  open("_adaptation/ruleset_shift8.txt", "w") { |f|
-#    f.puts ruleset_8
-#  }
-#
-#  open("_adaptation/ruleset_shift9.txt", "w") { |f|
-#    f.puts ruleset_9
-#  }
-#end
+def create_rulesets
+  row = 0 ## The value of row is 0.
+
+  ## The directory knwon_ruleset is _ruleset/rules.txt
+  ruleset = File.readlines("_rulesets/rules.txt")
+
+  ### Values of the individual rows, as Ruby counts from zero.
+  rule1 = 0 #row + 1
+  rule2 = 1 #row + 2
+  rule3 = 2 #row + 3
+  rule4 = 3 #row + 4
+  rule5 = 4 #row + 5
+  rule6 = 5 #row + 6
+  rule7 = 6 #row + 7
+  rule8 = 7 #row + 8
+  rule9 = 8 #row + 9
+
+  first_rule    = ruleset[rule1].tr "
+", ""
+  second_rule   = ruleset[rule2].tr "
+", ""
+  third_rule    = ruleset[rule3].tr "
+", ""
+  fourth_rule   = ruleset[rule4].tr "
+", ""
+  fifth_rule    = ruleset[rule5].tr "
+", ""
+  sixth_rule    = ruleset[rule6].tr "
+", ""
+  seventh_rule  = ruleset[rule7].tr "
+", ""
+  eighth_rule   = ruleset[rule8].tr "
+", ""
+  nineth_rule   = ruleset[rule9].tr "
+", ""
+
+  ### Creation of the actual rulesets.
+  ruleset_1 = "#{first_rule}
+#{second_rule}
+#{third_rule}
+#{fourth_rule}
+#{fifth_rule}
+#{sixth_rule}
+#{seventh_rule}
+#{eighth_rule}
+#{nineth_rule}"
+
+  ruleset_2 = "#{nineth_rule}
+#{first_rule}
+#{second_rule}
+#{third_rule}
+#{fourth_rule}
+#{fifth_rule}
+#{sixth_rule}
+#{seventh_rule}
+#{eighth_rule}"
+
+  ruleset_3 = "#{eighth_rule}
+#{nineth_rule}
+#{first_rule}
+#{second_rule}
+#{third_rule}
+#{fourth_rule}
+#{fifth_rule}
+#{sixth_rule}
+#{seventh_rule}"
+
+  ruleset_4 = "#{seventh_rule}
+#{eighth_rule}
+#{nineth_rule}
+#{first_rule}
+#{second_rule}
+#{third_rule}
+#{fourth_rule}
+#{fifth_rule}
+#{sixth_rule}"
+
+  ruleset_5 = "#{sixth_rule}
+#{seventh_rule}
+#{eighth_rule}
+#{nineth_rule}
+#{first_rule}
+#{second_rule}
+#{third_rule}
+#{fourth_rule}
+#{fifth_rule}"
+
+  ruleset_6 = "#{fifth_rule}
+#{sixth_rule}
+#{seventh_rule}
+#{eighth_rule}
+#{nineth_rule}
+#{first_rule}
+#{second_rule}
+#{third_rule}
+#{fourth_rule}"
+
+  ruleset_7 = "#{fourth_rule}
+#{fifth_rule}
+#{sixth_rule}
+#{seventh_rule}
+#{eighth_rule}
+#{nineth_rule}
+#{first_rule}
+#{second_rule}
+#{third_rule}"
+
+  ruleset_8 = "#{third_rule}
+#{fourth_rule}
+#{fifth_rule}
+#{sixth_rule}
+#{seventh_rule}
+#{eighth_rule}
+#{nineth_rule}
+#{first_rule}
+#{second_rule}"
+
+  ruleset_9 = "#{second_rule}
+#{third_rule}
+#{fourth_rule}
+#{fifth_rule}
+#{sixth_rule}
+#{seventh_rule}
+#{eighth_rule}
+#{nineth_rule}
+#{first_rule}"
+
+  open("_adaptation/ruleset_shift1.txt", "w") { |f|
+    f.puts ruleset_1
+  }
+
+  open("_adaptation/ruleset_shift2.txt", "w") { |f|
+    f.puts ruleset_2
+  }
+
+  open("_adaptation/ruleset_shift3.txt", "w") { |f|
+    f.puts ruleset_3
+  }
+
+  open("_adaptation/ruleset_shift4.txt", "w") { |f|
+    f.puts ruleset_4
+  }
+
+  open("_adaptation/ruleset_shift5.txt", "w") { |f|
+    f.puts ruleset_5
+  }
+
+  open("_adaptation/ruleset_shift6.txt", "w") { |f|
+    f.puts ruleset_6
+  }
+
+  open("_adaptation/ruleset_shift7.txt", "w") { |f|
+    f.puts ruleset_7
+  }
+
+  open("_adaptation/ruleset_shift8.txt", "w") { |f|
+    f.puts ruleset_8
+  }
+
+  open("_adaptation/ruleset_shift9.txt", "w") { |f|
+    f.puts ruleset_9
+  }
+end
 
 def adaptation_vortex
   ## Create new sound_file with new ruleset permutation.
@@ -272,15 +219,13 @@ def adaptation_vortex
 end
 
 ## Only create new rulesets if set to true.
-#rule_creation = false
+rule_creation = false
 
-#if rule_creation == true
-  #create_rulesets
-  # adaptation_vortex
-#else
-  #adaptation_vortex
-#end
-
-adaptation_vortex
+if rule_creation == true
+  create_rulesets
+  adaptation_vortex
+else
+  adaptation_vortex
+end
 
 end
