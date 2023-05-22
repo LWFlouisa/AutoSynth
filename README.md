@@ -1,6 +1,11 @@
 # AutoSynth
 A test to see if Random and Vortex based automation works for non machine learning tasks. Note that these tones are quarter tones built off of Bb Pentatonic Sakura.
 
+## An Overview Of Musical Modes
+An overview of the different musical scales and modes can be found here: [Musical Modes](https://en.wikipedia.org/wiki/Mode_(music))
+
+Here the principle is applied for modes of Vortex in C major. But detuned down a quarter tone.
+
 ## Creating Adaptational rulesets.
 
 ~~~
