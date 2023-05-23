@@ -1,4 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' ?>
+<?xml-stylesheet type='text/css' href='Stylesheet/rss.css' ?>
 <rss version='2.0'>
 
 <channel>
@@ -8,8 +9,8 @@
 
   
   <item>
-    <title>Fri Apr  7 11:24:55 PM CDT 2023</title>
-    <link>http://localhost:8000/documents/Fri_Apr__7_11:24:55_PM_CDT_2023.txt</link>
+    <title>Tue May 23 06:01:12 PM CDT 2023</title>
+    <link>http://localhost:8000/documents/Tue_May_23_06:01:12_PM_CDT_2023.txt</link>
     <description><![CDATA[<p>Result: basketcase => bazketcaze </p>
 
 <p>Result: wheelbarrow => wheehbaddow </p>
@@ -18,6 +19,17 @@
   </item>
       
   
+  <item>
+    <title>Tue May 23 06:01:10 PM CDT 2023</title>
+    <link>http://localhost:8000/documents/Tue_May_23_06:01:10_PM_CDT_2023.txt</link>
+    <description><![CDATA[<p>Result: basketcase => bazketcaze </p>
+
+<p>Result: wheelbarrow => wheehbaddow </p>
+
+<p>Result: windmill => wndmhh </p>]]></description>
+  </item>
+      
+
 </channel>
 
 </rss>
